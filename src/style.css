@@ -1,30 +1,78 @@
 body {
     overflow-x: hidden;
 }
+#update-subscription-btn {
+    text-decoration: underline;
+    color: black;
+    font-size: 15px;
+    display: inline-block;
+    /* text-align: center; */
+    width: 100%;
+}
+
+.custom-btn {
+    /* Reset any existing styles */
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+    outline: none;
+    /* Define new styles */
+    background-color: black;
+    color: white;
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+
+    /* Font properties */
+    font-weight: bold; /* Make the text bold */
+    font-size: 1.2rem; /* Increase the font size */
+    font-family: Arial, sans-serif; /* Specify a font family */
+}
+
+.custom-btn:hover {
+    background-color: white; /* Change background color on hover */
+    color: black; /* Change text color on hover */
+}
+
+
+
+
+
+.form-btn {
+    background-color: #black !important;
+    color: white !important;
+    border: none;
+    border-radius: 0;
+    font-size: 18px !important;
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Ensure proper button layout */
+    padding: 10px 20px; /* Adjust padding as needed */
+}
 
 .btn,
 button {
     background-color: #F98D67 !important;
-    color: white !important; 
+    color: white !important;
     border: none;
     border-radius: 0;
     font-size: 18px !important;
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Ensure proper button layout */
+    padding: 10px 20px; /* Adjust padding as needed */
 }
 
 .btn:hover,
-button:hover {
-    color: black;
-}
-
-a:hover {
-    text-decoration: none;
+button:hover,
+.btn:hover a,
+button:hover a {
+    background-color: white !important; /* Change background color on hover */
+    color: black !important; /* Change text color on hover */
 }
 
 a {
-    color: black;
-
+    color: inherit; /* Inherit color from parent */
 }
-
 
 .hero-section {
     background-image: url(static/hero-img.png) !important;
@@ -55,12 +103,7 @@ a {
     font-size: 16px;
 }
 
-.contact-form-section .btn{
-    background-color: white;
-    font-size: 18px;
-    border: 3px solid #F98D67;
-    color: black;
-}
+
 
 
 .hero-section h1 {
